@@ -23,9 +23,23 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .section {
-  margin-top: 0;
-  margin-bottom: 94px;
+  padding-top: 47px;
+  padding-bottom: 47px;
 }
 
 .section-title {
@@ -37,10 +51,6 @@ body {
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
-}
-
-.section-title.padding {
-  padding-top: 94px;
 }
 
 .container {
@@ -326,7 +336,6 @@ body {
 }
 
 .team-name {
-  margin-top: 30px;
   margin-bottom: 10px;
   padding: 0;
 
@@ -339,8 +348,6 @@ body {
 }
 
 .team-text {
-  margin-top: 0;
-  margin-bottom: 16px;
   padding: 0;
 
   color: var(--secondary-text-color);
@@ -353,6 +360,11 @@ body {
 .team-link-list {
   display: flex;
   justify-content: center;
+}
+
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-link-list > .item:not(:last-child) {
@@ -374,13 +386,13 @@ body {
   background-color: var(--accent-color);
 }
 
+.social-link:hover .link-icon {
+  fill: var(--white-color);
+}
+
 .link-icon {
   margin: 12px;
   fill: #afb1b8;
-}
-
-.link-icon:hover {
-  fill: var(--white-color);
 }
 
 /* clients */
@@ -416,8 +428,11 @@ body {
 
 .foot {
   background-color: #2f303a;
-  min-width: 1600px;
   height: 252px;
+}
+
+.container-footer {
+  display: flex;
 }
 
 .foot-address {
@@ -433,8 +448,7 @@ body {
 
 .foot-logo {
   display: inline-block;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   color: var(--white-color);
   font-family: Raleway;
@@ -442,6 +456,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+
+  padding-top: 60px;
 }
 
 .foot-contact-link {
@@ -467,24 +483,30 @@ body {
 
 .footer {
   display: flex;
+
+  flex-direction: column;
+
+  padding-bottom: 60px;
+}
+
+.footer-join {
+  margin-left: 70px;
 }
 
 .join-title {
-  margin-left: 156px;
-  margin-top: 72px;
-  margin-bottom: 20px;
-
   color: var(--white-color);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+
+  margin-top: 72px;
+  margin-bottom: 20px;
 }
 
 .join-list {
   display: flex;
   justify-content: center;
-  margin-left: 82px;
 }
 
 .join-list > .item:not(:last-child) {
@@ -594,4 +616,9 @@ body {
 .portfolio-list > .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.border {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  width: 100%;
 }
