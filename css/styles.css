@@ -43,7 +43,7 @@ p {
 }
 
 .padding {
-  padding-top: 47px;
+  padding-top: 94px;
 }
 
 .section-title {
@@ -343,8 +343,6 @@ p {
 
 .team-bcg {
   background-color: #f5f4fa;
-  min-width: 1600px;
-  height: 708px;
 }
 
 .team-name {
