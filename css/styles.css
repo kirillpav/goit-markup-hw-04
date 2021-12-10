@@ -621,7 +621,7 @@ p {
   border: 1px solid rgba(238, 238, 238, 1);
 }
 
-.portfolio-list > .item:nth-child(-n + 3) {
+.portfolio-list > .item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
 
